@@ -1,0 +1,17 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: spring-boot-hystrix-turbin
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+turbine:
+  appConfig: spring-boot-hytrix,spring-boot-client
+  clusterNameExpression: "'default'"
+   
+
+      
